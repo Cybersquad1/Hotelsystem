@@ -42,7 +42,7 @@ namespace Hotels.View
                 if (tbPassword1.Text == tbPassword2.Text)
                 {
                     controller.UpdateProfile();
-                    MessageBox.Show("Користувач " + tbLogin.Text + " зареєстрований", "Реєстрація пройшла успішно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("User " + tbLogin.Text + " registered", "Registration was successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     FormLogin formRegister = new FormLogin();
                     formRegister.MdiParent = MdiParent;
                     formRegister.Show();
@@ -50,12 +50,12 @@ namespace Hotels.View
                 }
                 else
                 {
-                    MessageBox.Show("Паролі не збігаються", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Passwords do not match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Введіть пароль", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Вenter the password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
             

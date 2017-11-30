@@ -26,5 +26,10 @@ namespace Hotels.View
         {
 
         }
+
+        private void Kitchen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

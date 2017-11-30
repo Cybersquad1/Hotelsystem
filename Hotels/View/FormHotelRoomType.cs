@@ -36,8 +36,8 @@ namespace Hotels.View
 
         private void bindingNavigatorDeleteItem_Click(object sender, EventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Ви справді хочете видалити тип кімнати з готелю?",
-            "Видалення", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dialog = MessageBox.Show("Are you sure you want to remove the room type from the hotel?",
+            "Deleting", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (dialog == DialogResult.Yes)
             {

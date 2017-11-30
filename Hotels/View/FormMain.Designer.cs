@@ -1,4 +1,4 @@
-﻿namespace Hotels
+﻿ namespace Hotels
 {
     partial class FormMain
     {
@@ -40,8 +40,6 @@
             this.itemHotelRoomType = new System.Windows.Forms.ToolStripMenuItem();
             this.itemDictionaryHotelEmployee = new System.Windows.Forms.ToolStripMenuItem();
             this.kitchenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.orderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.foodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.barToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orderToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.drinksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -150,7 +148,7 @@
             // 
             this.itemEmployee.Name = "itemEmployee";
             this.itemEmployee.Size = new System.Drawing.Size(200, 26);
-            this.itemEmployee.Text = "Workers";
+            this.itemEmployee.Text = "Employee";
             this.itemEmployee.Click += new System.EventHandler(this.itemEmployee_Click);
             // 
             // itemHotelRoomType
@@ -169,24 +167,10 @@
             // 
             // kitchenToolStripMenuItem
             // 
-            this.kitchenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.orderToolStripMenuItem,
-            this.foodToolStripMenuItem});
             this.kitchenToolStripMenuItem.Name = "kitchenToolStripMenuItem";
             this.kitchenToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
             this.kitchenToolStripMenuItem.Text = "Kitchen";
-            // 
-            // orderToolStripMenuItem
-            // 
-            this.orderToolStripMenuItem.Name = "orderToolStripMenuItem";
-            this.orderToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.orderToolStripMenuItem.Text = "Order";
-            // 
-            // foodToolStripMenuItem
-            // 
-            this.foodToolStripMenuItem.Name = "foodToolStripMenuItem";
-            this.foodToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.foodToolStripMenuItem.Text = "Food";
+            this.kitchenToolStripMenuItem.Click += new System.EventHandler(this.kitchenToolStripMenuItem_Click);
             // 
             // barToolStripMenuItem
             // 
@@ -473,8 +457,6 @@
         private System.Windows.Forms.ToolStripMenuItem itemSettingPersonEmployee;
         private System.Windows.Forms.ToolStripMenuItem itemSettingClient;
         private System.Windows.Forms.ToolStripMenuItem kitchenToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem foodToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem barToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem drinksToolStripMenuItem;

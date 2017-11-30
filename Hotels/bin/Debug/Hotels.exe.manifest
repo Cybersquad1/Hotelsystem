@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hotels.exe" size="566272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hotels.exe" size="573952">
       <assemblyIdentity name="Hotels" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uq4ENWRUWMYFJyFnME9rLj0xuR3kkkTiu7CBBX8LF74=</dsig:DigestValue>
+        <dsig:DigestValue>zdggCJign/r2Z6wWp+GEprXZQjmBDxcK5/OzO16YQUg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -59,7 +59,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>IRaZ+v3vW4vqBp8IhDht+npcCcwyOsMwdRqVRTHMopA=</dsig:DigestValue>
+      <dsig:DigestValue>7jFp+zvO2BLhL7kdZ/ZLTIFi3U2UYjmcMY6NWUhTvZ4=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

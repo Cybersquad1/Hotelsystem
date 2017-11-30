@@ -37,11 +37,11 @@ namespace Hotels.View
             if (controller.IsValid())
             {
                 controller.SaveUserBooking();
-                MessageBox.Show("Номер забрьоновано", "Бронювання", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Number is locked", "Reservation", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Close();
             }
             else
-                MessageBox.Show("Дані введено не вірно", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Data entered incorrectly", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         private void cbHotel_SelectedIndexChanged(object sender, EventArgs e)
         {

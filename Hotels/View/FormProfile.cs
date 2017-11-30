@@ -42,17 +42,17 @@ namespace Hotels.View
                 if (tbPassword1.Text == tbPassword2.Text)
                 {
                     controller.UpdateProfile();
-                    MessageBox.Show("Профіль оновлений", "Оновлення пройшло успішно", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Profile updated", "The update was successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Паролі не збігаються", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Passwords do not match", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Введіть пароль", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Enter the password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void checkBoxShow_CheckStateChanged(object sender, EventArgs e)
