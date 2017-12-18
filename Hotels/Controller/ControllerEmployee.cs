@@ -106,7 +106,7 @@ namespace Hotels.Controller
             new Employee().Get();
             charts["Salary"].ChartAreas[0].AxisY.Interval = 1;
             charts["Age"].ChartAreas[0].AxisY.Interval = 1;
-            charts["Salary"].Titles["Salary"].Text = "Зарплата";
+            charts["Salary"].Titles["Salary"].Text = "Salary";
             charts["Age"].Titles["Age"].Text = "Вік";
             SalaryChart();
             AgeChart();

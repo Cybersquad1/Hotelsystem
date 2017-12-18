@@ -93,3 +93,4 @@ C:\Users\Samuelson\Downloads\Hotelsystem\HotelSystem\Hotels\obj\Debug\Hotels.exe
 C:\Users\Samuelson\Downloads\Hotelsystem\HotelSystem\Hotels\obj\Debug\Hotels.application
 C:\Users\Samuelson\Downloads\Hotelsystem\HotelSystem\Hotels\obj\Debug\Hotels.exe
 C:\Users\Samuelson\Downloads\Hotelsystem\HotelSystem\Hotels\obj\Debug\Hotels.pdb
+C:\Users\Samuelson\Downloads\Hotelsystem\HotelSystem\Hotels\obj\Debug\Hotels.View.FormInventory.resources

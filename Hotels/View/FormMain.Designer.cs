@@ -53,6 +53,7 @@
             this.itemStatisticEmployee = new System.Windows.Forms.ToolStripMenuItem();
             this.itemStatisticHotel = new System.Windows.Forms.ToolStripMenuItem();
             this.itemProfile = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.itemSetting = new System.Windows.Forms.ToolStripMenuItem();
             this.itemSettingHotels = new System.Windows.Forms.ToolStripMenuItem();
             this.itemSettingHotelList = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,6 +69,7 @@
             this.itemClose = new System.Windows.Forms.ToolStripMenuItem();
             this.itemRefresh = new System.Windows.Forms.ToolStripMenuItem();
             this.itemExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,7 +105,8 @@
             this.itemHotelRoomType,
             this.itemDictionaryHotelEmployee,
             this.kitchenToolStripMenuItem,
-            this.barToolStripMenuItem});
+            this.barToolStripMenuItem,
+            this.inventoryToolStripMenuItem});
             this.itemDictionary.Image = ((System.Drawing.Image)(resources.GetObject("itemDictionary.Image")));
             this.itemDictionary.Name = "itemDictionary";
             this.itemDictionary.Size = new System.Drawing.Size(108, 25);
@@ -170,7 +173,7 @@
             this.kitchenToolStripMenuItem.Name = "kitchenToolStripMenuItem";
             this.kitchenToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
             this.kitchenToolStripMenuItem.Text = "Kitchen";
-            this.kitchenToolStripMenuItem.Click += new System.EventHandler(this.kitchenToolStripMenuItem_Click);
+            this.kitchenToolStripMenuItem.Click += new System.EventHandler(this.KitchenToolStripMenuItem_Click);
             // 
             // barToolStripMenuItem
             // 
@@ -268,11 +271,19 @@
             // 
             // itemProfile
             // 
+            this.itemProfile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logoutToolStripMenuItem});
             this.itemProfile.Image = ((System.Drawing.Image)(resources.GetObject("itemProfile.Image")));
             this.itemProfile.Name = "itemProfile";
             this.itemProfile.Size = new System.Drawing.Size(87, 25);
             this.itemProfile.Text = "Profile";
             this.itemProfile.Click += new System.EventHandler(this.itemProfile_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
+            this.logoutToolStripMenuItem.Text = "Logout ";
             // 
             // itemSetting
             // 
@@ -396,6 +407,12 @@
             this.itemExit.Text = "Exit";
             this.itemExit.Click += new System.EventHandler(this.itemExit_Click);
             // 
+            // inventoryToolStripMenuItem
+            // 
+            this.inventoryToolStripMenuItem.Name = "inventoryToolStripMenuItem";
+            this.inventoryToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.inventoryToolStripMenuItem.Text = "Inventory";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -460,6 +477,8 @@
         private System.Windows.Forms.ToolStripMenuItem barToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem drinksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventoryToolStripMenuItem;
     }
 }
 

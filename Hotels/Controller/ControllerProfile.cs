@@ -87,7 +87,7 @@ namespace Hotels.Controller
         }
         public void SaveRegister()
         {
-            ////додаємо поточного користувача в реєстр
+            ////add the current user to the registry
             Microsoft.Win32.RegistryKey key;
             key = Microsoft.Win32.Registry.CurrentUser.CreateSubKey("HotelsLicense");
             key.SetValue("Login", User.Login);

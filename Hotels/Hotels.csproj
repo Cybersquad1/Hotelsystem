@@ -169,6 +169,12 @@
     <Compile Include="View\FormHotelRoomType.Designer.cs">
       <DependentUpon>FormHotelRoomType.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\FormInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FormInventory.Designer.cs">
+      <DependentUpon>FormInventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +273,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormHotelRoomType.resx">
       <DependentUpon>FormHotelRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FormInventory.resx">
+      <DependentUpon>FormInventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

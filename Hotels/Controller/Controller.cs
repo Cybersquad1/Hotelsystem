@@ -51,7 +51,7 @@ namespace Hotels.Controller
             }
         }
 
-        //метод формує стовпці таблиці
+        //the method generates column columns
         public virtual void FillColumns()
         {
             Type myType = typeof(T);
@@ -94,7 +94,7 @@ namespace Hotels.Controller
             IList<PropertyInfo> props = new List<PropertyInfo>(myType.GetProperties());
             DataColumn column;
             DataRow row;
-            // Додаємо стовпці таблиці
+            // Add columns to the table
             foreach (PropertyInfo prop in props)
             {
                 column = new DataColumn();
@@ -103,7 +103,7 @@ namespace Hotels.Controller
                 column.ReadOnly = true;
                 dataTable.Columns.Add(column);
             }
-            //Додаємо рядки таблиці
+            //Add rows to the table
             for (int i = 0; i < array.Length; i++)
             {
                 row = dataTable.NewRow();

@@ -20,7 +20,7 @@ namespace Hotels.Controller
             DataTable table = new DataTable();
             DataColumn column;
             DataRow row;
-            // Додаємо стовпці таблиці
+            // Add columns to the table
             foreach (PropertyInfo prop in props)
             {
                 column = new DataColumn();
@@ -29,7 +29,7 @@ namespace Hotels.Controller
                 column.ReadOnly = true;
                 table.Columns.Add(column);
             }
-            //Додаємо рядки таблиці
+            //Add rows to the table
             for (int i = 0; i < array.Length; i++)
             {
                 row = table.NewRow();
@@ -52,17 +52,17 @@ namespace Hotels.Controller
             dgv.Columns.Clear();
             try
             {
-                // задаємо налаштування
+                // set the settings
                 dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dgv.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
-                // Додаємо стовпці таблиці
+                // Add columns to the table
                 foreach (var item in array[0].GetType().GetProperties())
                 {
                     DataGridViewColumn temp = new DataGridViewTextBoxColumn();
                     temp.HeaderText = Convert.ToString(item.Name);
                     dgv.Columns.Add(temp);
                 }
-                //Додаємо рядки до табиці, які містять усі об'єкти вхідного масиву
+                //Add rows to the tabs that contain all objects in the input array
                 for (int i = 0; i < array.Length; i++)
                 {
                     AddRowsToTable(array[i], dgv);

@@ -43,10 +43,10 @@ namespace Hotels.Controller
             {
                 payment.Date = DateTime.Now;
                 payment.Insert();
-                MessageBox.Show("Платіж пройшов успішно", "Оплата", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Payment was successful", "Payment", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
-                MessageBox.Show("Платіж не пройшов успішно", "Оплата", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Payment failed", "Payment", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         public Booking Select(int id)
@@ -63,14 +63,14 @@ namespace Hotels.Controller
             Booking currentBooking = Select(Int32.Parse(TextBoxs["Search"].Text));
             if (currentBooking != null)
             {
-                richTextBox.AppendText("Клієнт: " + currentBooking.Client.ToString() + "\n");
-                richTextBox.AppendText("Готель: " + currentBooking.Room.Hotel.ToString() + "\n");
-                richTextBox.AppendText("Тип кімнати: " + currentBooking.Room.RoomType.ToString() + "\n");
-                richTextBox.AppendText("Кімната: " + currentBooking.Room.ToString() + "\n");
-                richTextBox.AppendText("Дата заїзду: " + currentBooking.StartDate.Date.ToString("dd/MM/yyyy") + "\n");
-                richTextBox.AppendText("Дата виїзду: " + currentBooking.EndDate.Date.ToString("dd/MM/yyyy") + "\n");
-                richTextBox.AppendText("Вартість: " + currentBooking.GetPrice().ToString() + " грн. " + "\n");
-                richTextBox.AppendText("Статус: " + currentBooking.GetStatus() + "\n");
+                richTextBox.AppendText("Client: " + currentBooking.Client.ToString() + "\n");
+                richTextBox.AppendText("Hotel: " + currentBooking.Room.Hotel.ToString() + "\n");
+                richTextBox.AppendText("Type of room: " + currentBooking.Room.RoomType.ToString() + "\n");
+                richTextBox.AppendText("Room: " + currentBooking.Room.ToString() + "\n");
+                richTextBox.AppendText("Arrival date: " + currentBooking.StartDate.Date.ToString("dd/MM/yyyy") + "\n");
+                richTextBox.AppendText("Date of departure: " + currentBooking.EndDate.Date.ToString("dd/MM/yyyy") + "\n");
+                richTextBox.AppendText("Cost: " + currentBooking.GetPrice().ToString() + " UAH. " + "\n");
+                richTextBox.AppendText("Status: " + currentBooking.GetStatus() + "\n");
 
                 payment.Booking = currentBooking;
 
@@ -79,7 +79,7 @@ namespace Hotels.Controller
                 Labels["Remainder"].Text = payment.GetRemainder().ToString();
             }
             else
-                richTextBox.AppendText("Бронювання відсутнє");
+                richTextBox.AppendText("No booking is available");
         }
     }
 }

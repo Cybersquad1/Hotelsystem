@@ -272,7 +272,7 @@ namespace Hotels
             form.Show();
         }
 
-        private void kitchenToolStripMenuItem_Click(object sender, EventArgs e)
+        private void KitchenToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
